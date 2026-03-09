@@ -1,0 +1,54 @@
+name: Build PDF for release and deploy to Pages
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: text.tex
+
+      - name: Prepare site
+        run: |
+          mkdir site
+          cp text.pdf site/
+
+          cat <<EOF > site/index.html
+          <h1>Release ${{ github.event.release.tag_name }}</h1>
+          <p><a href="text.pdf">Download PDF</a></p>
+          <embed src="text.pdf" width="100%" height="1000px" type="application/pdf">
+          EOF
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to Pages
+        uses: actions/deploy-pages@v4
+
