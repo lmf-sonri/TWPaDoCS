@@ -28,37 +28,6 @@ jobs:
         with:
           files: text.pdf
 
-      # Prepare GitHub Pages site
-      - name: Prepare site
-        run: |
-          mkdir site
-          cp text.pdf site/
-
-          cat <<EOF > site/index.html
-          <!DOCTYPE html>
-          <html>
-          <head>
-          <meta charset="utf-8">
-          <title>Towards Women Professors at DoCS</title>
-          </head>
-          <body>
-
-          <h1>${{ github.event.repository.name }}</h1>
-          <p>Release: ${{ github.event.release.tag_name }}</p>
-
-          <p><a href="text.pdf">Download PDF</a></p>
-
-          <embed src="text.pdf" width="90%" height="1000px" type="application/pdf">
-
-          </body>
-          </html>
-          EOF
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
