@@ -6,11 +6,10 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+
 
 jobs:
-  build:
+  build-and-upload:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,16 +26,4 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: text.pdf
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment: github-pages
-
-    permissions:
-      pages: write
-      id-token: write
-
-    steps:
-      - uses: actions/deploy-pages@v4
 
