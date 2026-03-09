@@ -1,0 +1,603 @@
+% \documentclass[a4paper, 12pt]{article}
+%% \usepackage[left=3.9cm,right=3.9cm,top=3cm,bottom=3cm]{geometry}
+
+\documentclass[a4paper,10pt,twocolumn]{article}
+\usepackage[left=2.6cm,right=2.6cm,top=2.55cm,bottom=2.55cm]{geometry}
+
+\usepackage{xurl} 
+\usepackage{cancel}
+\begin{document}
+
+\title{Towards woman professors at DoCS}
+\date{}
+
+\maketitle
+
+% \textsuperscript{,}\footnote{Released 8 March, 2026} first
+% }
+
+\paragraph{Abstract} When the author\footnote{Laura Marie Feeney, Uppsala Univeristy.} first
+visited Uppsala University in the early 2000's, she was slightly
+surprised and mildly disappointed that there were no women professors
+at the Division of Computer Systems.
+%% \footnote{Laura Marie Feeney is an experienced researcher with a
+%% strong international profile. She has been a student, engineer,
+%% researcher and manager at startups, companies, labs and universities
+%% in the US and Sweden, and a visiting scholar at universities in
+%% Germany and Italy.}
+Over the following twenty years, DoCS has \emph{failed to hire and
+retain even one woman} who would go on to be promoted to professor at
+UU.  The situation should no longer be considered ``mildly
+disappointing''.  It should be seen as evidence of a problem,
+especially in context of a recent employee survey reporting no gender
+discrimination at DoCS.
+
+This essay\footnote{\url{https://github.com/lmf-sonri/TWPaDoCS}, v26.03.08}
+discusses some gender-related aspects of hiring and retaining women
+researchers, as well as issues related to evaluating and improving the
+gender environment.  While the focus is on DoCS, some discussion is
+more broadly applicable in the IT department and beyond.  It is
+written from the perspective of an experienced Computer Systems
+researcher, rather than a specialist in gender studies or HR policy
+and so closes with some personal reflections.\footnote{The author has
+no formal background in Gender Studies.  The intent is to address the
+situation at DoCS, not to rehash ``women in tech''.}
+
+%% The title is a traditional formulation for a paper that provides
+%% useful structure, but no definitive solution, for some problem.
+
+\subsection*{Introduction}
+
+Women are broadly underrepresented in computer science and engineering
+(CSE). In Europe and North America, slightly more than 20\% of PhDs in
+CSE are awarded to women.\footnote{Unsurprisingly, estimates vary
+somewhat, but recent values seem to be $\sim$19-22\%.}  However, this
+statistic masks considerable variation among CSE sub-fields.  In the
+US and Canada, it is estimated that 12\%-16\% of PhDs in systems
+topics (architecture, networking, OS, robotics, and
+security/assurance) were awarded to women in 2012-2019.  By contrast,
+29\%-50\% of PhDs in the fields of HCI, IS, and CSE education were
+awarded to women.\footnote{The CRA Taulbee survey:
+\url{https://cra.org/crn/2019/08/expanding-the-
+ pipeline-gender-and-ethnic-differences-in-phd-specialty-areas} has
+surveyed US and Canadian CSE departments since the
+1970's.}\textsuperscript{,}\footnote{No European organization seems to
+collect comparable statistics.  Since the overall proportion of women
+in CSE is similar in the two regions, it is reasonable to assume that
+the distribution among sub-fields is also
+similar.}\textsuperscript{,}\footnote{Approximately 10\% of authors at
+international systems conferences in 2017 had women's names
+(\url{https://arxiv.org/abs/2201.01757}).  This seems roughly
+consistent with the estimate above, since this sample reflects
+long-term ``leaky-pipeline'' demographics, not just recent PhDs.}
+
+Women are both historically and currently under-represented at DoCS,
+even taking into account the particularly low proportion of women in
+computer systems.  Crucially, there does not seem to be any trend
+toward sustainable improvement.
+
+Over the past twenty years, the number of women lecturers
+(assistant/associate professor) active at DoCS has varied between zero
+and two, mostly the former.  To date, no woman lecturer has remained
+at DoCS long enough to be promoted to (full) professor.  A handful of
+women have been with DoCS in other roles. However, these have been
+either short-term (e.g.\,post-doc) positions or secondary affiliations
+with minimal presence at UU.
+  
+During this period, DoCS has been one of the larger divisions in the
+IT department.  At least ten men have been promoted to professor,
+though some are no longer active at DoCS.  The corps of senior
+lecturers has generally had between eight and thirteen men, including
+adjuncts.
+
+Women have defended around 15\% of DoCS PhD theses since 2000, but the
+number of women defending has decreased slightly over time.\footnote{A
+quick DIVA search showed that more women defended theses in 2000-2012
+(9) than in 2013-2025 (6). The sample is small and may be incomplete
+(e.g.\,joint/external supervision, gender inferred from name in a few
+cases), but the data certainly do not indicate strong growth.}  DoCS
+currently has over 20 PhD students, but only three or four women will
+defend theses at DoCS into the early 2030's.
+
+
+\subsection*{Hiring women}
+
+Successful recruiting requires that an organization is both willing to
+hire women and able to bring in highly-qualified
+candidates.\footnote{This essay addresses only the second issue.}
+Most of the factors that make a position attractive to potential
+applicants apply equally to men and women.  But there are also
+gender-specific factors that may affect an organization's ability to
+attract highly-qualified women.  If DoCS lags its peer institutions in
+some way, it may face both immediate and accumulating challenges in
+recruiting, given the limited pool of women candidates.
+
+\paragraph{Visible gender environment}
+Some women consider the gender environment when making career
+decisions: \emph{Are there other women in my field working there and
+are they successful?}
+
+Potential applicants have many sources of information about DoCS and
+the IT department.  Departmental web pages identify women associated
+with DoCS, while tools like Google Scholar have reliable information
+about their research activity and current affiliations.  This makes it
+fairly easy to determine the actual representation of women.
+
+The research community is also a source of subjective impressions of
+universities' gender environments: PhD students and researchers
+publish and participate widely in international conferences and
+collaborations.  People can thus observe the career trajectories of
+both junior and senior women in their field.\footnote{Edith Ngai's
+move from UU to HKU was mentioned to the author at several
+conferences.}  Organizations such as N2Women also sponsor networking
+and mentorship events at major conferences.\footnote{``Networking
+Networking Women''; the author has been a mentor in this program.}
+
+Locally, IT students at UU experience some aspects of DoCS gender
+environment, such as the balance between men and women instructors.
+This can affect young women's academic and career outcomes, possibly
+including whether they choose to continue at UU for MSc or
+PhD.\footnote{The gender studies literature suggests that exposure to
+women instructors and mentors has a positive effect.}  Visitors,
+whether exchange students or senior scholars, may also get a sense of
+the gender environment.
+
+Finally, candidates who advance to the interview stage for a position
+can directly observe some aspects of the DoCS gender environment.
+
+\paragraph{Competition in hiring} The challenges faced by applicants
+for academic jobs are widely discussed.  But universities (except for
+the most elite) must also compete globally to make themselves
+attractive to promising candidates.  Since only a small fraction of
+potential applicants in computer systems are women, gender-related
+factors can affect this competition.
+
+As noted above, some women may prefer organizations that they view as
+having a good gender environment and successful women researchers.
+Mentors may also take their own impressions into account in advising
+women.  These factors may affect women's choices in applying for
+positions, even with a positive feedback effect.
+
+Most organizations must follow rules about gender equality in
+hiring. The formal mechanisms can vary widely, in both their specific
+goals and their practical impact.  For example, some policies try to
+make the hiring process as mechanical as possible, while others
+actively promote hiring from under-represented groups.  Informally,
+some departments, or even individuals, may be proactive in identifying
+and encouraging applications from talented women.  Such efforts mean
+that highly-qualified women may be quickly taken ``off the market'' by
+organizations that have prioritized attracting them.
+
+\paragraph{Impact}
+The factors above are arguably minor compared to gender-independent
+factors, such as funding, that are key to attracting good applicants.
+Nevertheless, they can have a large impact: Typically, a few top-tier
+applicants form the ``short-list'' of candidates for a position.
+Statistically, it is likely that at most one of those candidates is a
+woman.\footnote{I.e.\,assuming both candidate quality and applications
+are roughly i.i.d wrt gender.  Math left as an exercise.}  Hiring is
+therefore sensitive to factors that influence whether very
+highly-qualified women choose to apply for or accept a position.  If
+that one (statistical) woman who would otherwise have been on the
+short-list does not apply, it may effectively eliminate the
+possibility of hiring a woman.\footnote{\label{foot:hire}Note that if
+some very highly-qualified man chooses not to apply, the short-list is
+still mostly men.}\textsuperscript{,}\footnote{In this case, a rule
+like ``interview at least one woman'' is useless; the women most
+likely to successfully compete for the position on merit did not
+apply.}
+
+\subsection*{Retaining and promoting women}
+
+DoCS appears to have substantial gender disparities with respect to
+both the types of positions that senior researchers hold and their
+retention rate.
+
+
+Both men and women have had various kinds of secondary affiliations at
+DoCS.  While such arrangements can be valuable for both sides, these
+positions do not typically lead to a professorship.  Over the past
+twenty years, it has often been the case that a \emph{large majority}
+of the women who were listed as affiliated with DoCS have had their
+main position elsewhere and only a minimal connection to UU.  By
+contrast, most men affiliated with DoCS have had their main position
+there.
+
+Likewise, both men and women have left DoCS.  While it is neither
+appropriate nor helpful to focus here on individuals, the fact is that
+\emph{no woman} who has been hired as a lecturer has remained at DoCS
+long enough to be promoted to professor.  By contrast, a high
+proportion of men have remained at UU and many have been
+promoted.\footnote{As with recruiting, retention is more sensitive to
+failure to retain women lecturers (footnote
+\footnotesize{\ref{foot:hire}}).}
+
+
+
+Given the long-standing under-representation of women at DoCS, this
+repeated failure to retain and promote women lecturers is cause for
+concern: \emph{``Once is an accident, twice is a coincidence, three
+times is enemy action.''}\footnote{An English saying. Statistics are
+considered later.}
+
+%% \textsuperscript{,}\footnote{There are serveral
+%% versions.}\textsuperscript{,}\footnote{Why, yes, the author \emph{is} from Chicago.}
+
+The decision to leave a position usually reflects some combination of
+professional, personal and family considerations.\footnote{Also legal
+issues like immigration, pension, etc.}  It is unsurprising that this
+complex optimization problem sometimes resolves in favor of moving,
+for both men and women.  Nevertheless, the gender environment in the
+broader research community and in the workplace can affect women's
+professional success and personal job satisfaction.  These factors can
+influence a decision to seek new opportunities in academia or
+industry.
+
+\paragraph{Research community}
+To be successful, a researcher needs to not only obtain high-quality
+technical results, but also to establish themselves and their results
+in the research community.  Competition for funding and attention is
+therefore extremely intense -- high status and visibility in
+professional networks is essential for attracting both.  Strong
+relationships with key industry players are also crucial for securing
+certain kinds of funding and for driving real-world impact.
+
+%% for access to top-tier
+%% collaborations and funding, as well as for CV-enhancers like invited
+%% talks and prestigious service roles. 
+
+But as researchers advance in their careers, perceptions and
+evaluations of their professional merit necessarily become more
+subjective: The ``right answer'' is not known and novel research is
+often initially uncertain or incomplete.  Experts must rely in part on
+their intuition and judgment in assessing which research directions
+and results -- and which researchers -- are most convincing and
+promising.
+
+%% Breaking new ground technically is a complex and uncertain venture.
+%% There are uncertain results and false starts along the way, and no
+%% clear figure of merit.
+
+Technical expertise is not enough; professional success depends in
+part on social competition and human reactions.  These can be affected
+by gender dynamics, especially in fields like computer systems, where
+women are severely under-represented and sometimes perceived as
+receiving preferential treatment.  For example, credit for joint
+achievements may not be shared or perceived fairly.  Even ostensibly
+objective and gender-neutral measures -- publication metrics, teaching
+evaluations, collaborations, funding, and awards -- partly reflect the
+cumulative impact of subjective social factors.
+
+To thrive as researchers, women must be able to operate on a fully
+equal basis, not only within IT department, but also in the Swedish
+and international research communities.  Although the latter are
+obviously outside the university's direct control, the university and
+department should be institutionally proactive about this.  It should
+not be incumbent on individuals to monitor and advocate for gender
+equality, especially at the governmental level.
+
+% if UU aspires to a leading role in Swedish and European society,
+
+\paragraph{Local gender environment}
+
+In the recent five-yearly survey of IT Department, DoCS employees
+reported no gender discrimination in DoCS.\footnote{Only $\sim$1/3 of
+employees responded; it obviously cannot be known whether any women
+did.  (The author did not.)}  Nevertheless, both DoCS' long-term
+failure to retain women lecturers -- and the survey result itself --
+suggest that there are grounds for concern about the gender
+environment at DoCS.
+
+Historically, there have been at most one or two women substantially
+active at DoCS in senior roles. In the gender studies literature,
+women who have few or no other women as colleagues, role models or
+mentors are reported to have lower job satisfaction and lower
+retention rates.  Suggested causes include poor organizational
+culture, feelings of isolation, pressure to act in a representative
+role and a sense of facing a ``non-level playing field''.\footnote{The
+author has limited competency with the gender studies literature, but
+levels of significance seem to vary.\label{disclaimer}}
+
+As noted earlier, a number of women have had a secondary affiliation
+with DoCS; often these women have made up majority of women in the
+division.  This practice may provide a little more presence for women
+at DoCS (and improve its nominal gender statistics).  But it has also
+created an unfortunate pattern where women ``at'' DoCS typically have
+little activity or influence there.
+
+There is a certain amount of bureaucracy and cosmetic norms around
+gender equality in the IT department and university.  To some extent,
+it is treated as (not entirely incorrectly) as meaningless process in
+an organization that is already awash with it.  In any case, it has
+resulted in a strange equilibrium between procedural ``success'' and
+actual failure to achieve substantial improvement in DoCS' gender
+environment.
+
+\subsection*{Evaluating the gender environment}
+
+Although DoCS is one of the larger divisions in the IT department, it
+is not a statistically large sample, especially given the low
+proportion of women in computer systems.  It is therefore important to
+understand the role and limitations of any evaluation method, both
+with respect to DoCS and more generally.
+
+Statistical checks can compare easily controlled values, such as
+salary or teaching hours.  As noted earlier, however, these simple
+metrics are not the ones that have the most impact on a researcher's
+career.  In theory, statistics can also address somewhat pointless
+hypotheticals like \emph{What is the probability that DoCS' current
+and historical gender statistics can be explained purely by
+chance?}\footnote{I.e.\ compared to the gender statistics obtained via
+a random process of arrivals and departures.}
+
+% \footnote{For example, women instructors are often seen as
+% less knowledgeable in controlled experiments.} 
+
+Given the sample size constraints it may be impossible to make strong
+statistical claims about gender equality in DoCS.  Moreover, there are
+significant limitations (discussed below) to statistical and survey
+methods that reduce the effectiveness of these tools in gender
+unbalanced environments.  Both of these factors support the natural
+bureaucratic tendency to focus on ``paperwork'' compliance, rather
+than grapple with sensitive problems.
+
+\paragraph*{Methodological aside (technical)} Statistical and survey methods are
+widely used for measuring gender equality, both for evaluating
+specific situations and for gender studies research on ``women in
+STEM''.  Many studies make an implicit assumption that the sample is
+fairly homogeneous.  However, the proportion of women varies widely
+both between fields (e.g.\,biology \emph{vs} CSE) and within fields
+(e.g.\,HCI \emph{vs} computer systems).  Samples that span fields or
+sub-fields may therefore reflect a mix of gender environments:
+Potential examples include university-, department-, or agency-level
+studies, as well as work in gender research, where large $N$ samples
+are often desirable.
+
+In such cases, most of the women in the sample will necessarily come
+from precisely those environments where women are most \emph{strongly
+represented}.  The results will therefore be dominated by their
+experiences, rather than those of the much smaller set of women from
+environments where they are most \emph{severely
+under-represented}.\footnote{Consider an (numerically convenient, but
+not wildly unrealistic) hypothetical CSE department with 20 women and
+80 men.  Division A has 9 women and 14 men and division B has 8 women
+and 12 men, while divisions C, D, and E each have 1 woman and 18 men.
+Any department-wide measurement or survey overwhelmingly (85\%)
+reflects the experiences of the women in the two well-balanced
+divisions A and B.  But in divisions C, D, and E -- a majority (57\%)
+of the department -- women are outnumbered 18 to
+1.}\textsuperscript{,}\footnote{ Uncontrolled sampling -- ``please
+forward this survey to your female colleagues'' -- can amplify this
+effect.  Consider an (over-)simplified example where a survey is sent
+to a woman in a field where women have (on average) eight women
+colleagues and to a woman in a field where they have only three ($<$3x
+difference).  After two rounds of forwarding, the former group has had
+at most 57 unique contacts with potential respondents and the latter
+has had at most 7 ($>$8x difference).  (Somebody (else) should model
+this properly, perhaps on co-author networks.)}
+
+It is clearly the latter group that demands particularly careful
+scrutiny with respect to gender equality.  But these women are nearly
+invisible in the aggregated data!  Such studies may therefore be less
+complete and accurate than assumed.
+
+Privacy is also an issue when investigating gender issues in very
+unbalanced environments.  Even ``anonymous'' results provide little or
+no privacy to the women involved, since any gender-related content or
+analysis necessarily reflects the data associated with a very small
+number of women.\footnote{In our hypothetical CSE department,
+division-level gender comparisons are anonymous for both men and women
+in divisions A and B, but reveal the data associated with the lone
+women in divisions C, D and E.}\textsuperscript{,}\footnote{Recall
+that no gender discrimination was reported in the DoCS employee
+survey.}
+
+Despite the methodological challenges, it is important -- both for
+monitoring gender equality within organizations and for gender studies
+research -- to find ways to effectively measure environments where
+there are very few or even zero women.\footnote{You could call it the
+``dark matter'' of gender studies.}
+%% \textsuperscript{,}\footnote{If you have ``physics envy''.}
+%% \textsuperscript{,}\footnote{Which is different from Freudian
+%% ``penis envy''.}\textsuperscript{,}\footnote{Nah, not really.}
+
+\subsection*{Conclusion and personal reflections}
+
+In the author's opinion, there are long-standing issues with the
+gender environment at DoCS.  A disproportionate failure to hire, and
+especially to retain, women lecturers is particularly worrisome.  Over
+the past 20 years, DoCS has made almost no sustained progress in
+increasing the number of senior women researchers active in the
+division.  Nor has it significantly grown the pipeline of women at the
+PhD and post-doc levels.
+
+Moreover, the recent survey of DoCS employees suggests some denial of
+the problem (as well as highlighting the methodological limitations of
+surveys discussed above).  This long-term failure may reduce women's
+confidence in the seriousness of HR, IT and DoCS' leadership in
+ensuring a good gender environment.  Weakness in the visible gender
+environment may also reduce DoCS' international competitiveness.
+
+It is naturally tempting to view a sensitive and challenging problem
+as simply unfortunate or to argue that there is no proof that DoCS has
+a notably poor record.\footnote{To be fair, the problem is hardly
+limited to DoCS or even the IT department.}  Given the sample size,
+this claim may even be statistically tenable.
+
+%% Many organizations are working to improve their
+%% gender environment, whether on their own imitative or by external
+%% mandate.  DoCS needs to create a gender environment that allows it to
+%% successfully recruit and retain highly-qualified women (fixme).
+
+But achieving a good gender environment is an \emph{active goal}, not
+a passive statistical outcome.  If DoCS were to have a comparable
+pattern of long-term failure in applying for funding -- another
+competitive process with many subjective and random external factors
+-- it would probably not be viewed as just an unfortunate fluke.  The
+correct response to twenty years of ``bad luck'' is a strategy for
+getting some ``good luck''.\footnote{Raiding defenseless coastal
+\cancel{villages} universities in viking longships, looting their
+\cancel{gold} research grants, and stealing their women is currently
+\cancel{encouraged} forbidden by the local authorities.
+Inconvenient.}
+
+The administrative incentives are overwhelmingly to \emph{document
+that there is no problem}, not to address the problem.  Tick-box rules
+and cosmetic norms such ``\emph{xyz} committee must have a woman'' may
+do little more than put a disproportionally high administrative burden
+on a small number of women researchers.
+
+Moreover, emphasis on form contrasts unfavorably with persistent
+failure on substance -- to create a gender environment that allows
+DoCS to \emph{attract and retain highly-qualified women doing research
+in computer systems}.  The gender studies literature seems to suggest
+that this contradiction can create a kind of cognitive dissonance, or
+even a sense that it is women who have failed due to lack of desire or
+skill.\footnote{Students presumably observe the contradiction, too.
+The take-home message may have as much impact on young men as on young
+women.}\textsuperscript{,}\footnote{See also footnote
+\footnotesize{\ref{disclaimer}}.}
+
+%% \footnote{Almost as annoying as ``The funding application must
+%% have a gender equality section.''}
+
+It is wrong to dismiss criticism of DoCS' gender environment, even in
+the absence of clear evidence of a specific policy violation.  Such an
+attitude easily deteriorates into unwillingness and inability to work
+toward meaningful evaluation and needed improvement.  Documenting
+basic compliance with anti-discrimination rules is necessary.  But it
+has clearly not been sufficient to create an environment that allows
+DoCS to attract, retain and promote women researchers.  The former
+should not be used to intimidate or suppress concerns about the
+latter.
+
+Finally, it is not the special responsibility of women at DoCS to fix
+the issue.  Nor should they be required to provide ``constructive
+solutions'', should they choose to raise it.  Instead, it is the
+responsibility of the IT department, DoCS and the HR administration to
+work seriously toward genuine improvement.
+
+%% The gender environment at DoCS cannot be substantially improved
+%% through mainly bureaucratic stratagems.  To increase the nominal
+%% presence of women by adding external researchers or by attaching
+%% researchers working far outside computer systems may do little more
+%% than highlight that women Computer Systems.
+
+
+\paragraph*{Personal reflections (appendix)}
+
+Women in fields like computer systems (including the author) want to
+focus on their work and succeed on their merits.  For the most part,
+they just accept that their chosen area is overwhelmingly dominated by
+men and get on with life.\footnote{More accurately, \emph{the women
+who remain} are those who have been both willing and able to adapt to
+this. Anyone with the ability to excel in computer systems has almost
+certainly had many opportunities to choose to excel in something else
+instead.}
+
+Gender issues are mainly a distraction.  Life is hardly a controlled
+experiment: It is rarely clear how talent, character and chance -- as
+well as gender -- have contributed to success and failure.
+
+In any case, the only sensible option is to succeed in the world as it
+is.  Worrying about gender issues contributes nothing to that goal and
+is also boring and annoying.  At worst, it risks becoming an easy
+alternative to necessary self-criticism and diverting energy from
+useful work and productive self-improvement.  It is more efficient to
+focus on factors one can control.
+
+But an unhealthy gender environment can have a broader impact than
+occasionally irking the author and that creates a broader
+responsibility.  In contexts where there are very few women, they
+\emph{unavoidably} become representatives and role models, willing or
+not.\footnote{Paraphrased from Ginni Rometty, ex-CEO of IBM.}  For the
+author, this imposes a obligation to provide the strongest possible
+representation and the responsibility grows with visibility and
+seniority.
+
+Strong representation obviously includes demonstrating excellence in
+research -- pursuing an ambitious research agenda and obtaining
+unassailably solid results.  A robust record of achievement in
+research (and related KPI's) can serve as both a deterrent to
+discrimination and a role model for women's ability to succeed.
+
+%% Being in a
+%% representative role can sometimes even create extra motivation (and
+%% more pressure) in taking on challenges.
+
+A duty to provide strong representation can be interpreted as
+demanding nothing more than doing good research and providing good
+mentorship.  That is what any serious researcher does anyhow, making
+it a comfortable and sensible default: Research is already hard work;
+gender issues are a distraction; and life is too short to waste on
+stupid problems.
+
+But years of good representation from the small number of women
+researchers at DoCS has not led to any sustained improvement.
+Fundamentally, the problem of an environment that consistently fails
+to attract and retain women in senior roles \emph{has very little to
+do with} ``excellence in research''.  
+
+For the author, it is not clear how to ensure that women researchers
+thrive at DoCS.  Nor is it clear how to balance personal pragmatism
+with the obligations that come from being visible in a representative
+position.  
+
+No matter how tempting, equating representation with research
+achievement risks irresponsibly sending women a message that the
+situation is normal and acceptable or that they just need to ``excel
+more'' to succeed.
+
+Part of the difficulty is that any choice a woman makes --
+nag\footnote{The author has very mixed feelings about ``women in
+tech'' activism, some of which seems more performative than sensibly
+grounded.}, focus on research, leave -- affects the gender
+environment.  It is easy to inadvertently allow oneself to be used as
+a ``token'' or to cover for organizational problems, which can
+contribute to them being dismissed.  The obligation to provide strong
+representation is not to an organization, but to women and society.
+
+%% \textsuperscript{,}\footnote{If the author were to have used a word
+%% similar to \emph{nonsense} at some point, she would have had to
+%% delete it as more performative than sensibly grounded.}
+
+Finding a balance is challenging.  It is hard to avoid simultaneous
+criticisms of allowing oneself to be exploited because of gender and
+of focusing on gender at the expense of research.  Perhaps there is no
+peaceful solution, so a good researcher just writes up an intermediate
+result and moves on.
+
+%% %% \footnote{Equal opporutnity means that women should not need to be
+%% %% exceptional to be equal.}
+
+%% The obligation to ensure that women researchers thrive at DoCS is more
+%% complex.  It is not clear what someone who is (however involuntarily)
+%% in a representative position should do.  It is unwise to allow oneself
+%% to be used as a ``token'' or to cover for organizational problems; the
+%% core obligation is to women \emph{at} an organization.
+
+%% % That the issue was seen as a non-problem in the employee survey may
+%% % be partly the fault of the author.
+
+%% Focusing on research is easy.  But when the gender environment is not
+%% good, it is irresponsible to risk inadvertently sending the message
+%% that the situation is acceptable or that women just need to ``excel
+%% more''.  At the same time, any professional setback creates the
+%% additional pressure of being a negative example to and about women.
+
+%% %% The principle of equal opportunity means that women should not need to
+%% %% be better to be equal.
+
+%% There is an extremely difficult balance to achieve.  It is hard to
+%% avoid simultaneous criticism of allowing oneself to be exploited and
+%% of wasting energy on pointless problem.  Perhaps there is no peaceful
+%% solution -- so a good researcher simply writes up an intermediate
+%% result and moves on.
+
+\paragraph{Acknowledgments}
+The author appreciates the generous advice she has received about this
+essay.
+
+\end{document}
+
+
